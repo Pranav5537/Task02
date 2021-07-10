@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="surveyimage.png" type="image/gif" sizes="16x16">
+    <title>Survey</title>
+
+    <!-- css file link -->
+    <link rel = "stylesheet" href="./form.css">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="tittle">Survey from ABC Store</h1>
+            <p id="description">Thank you for taking the time to help  us to improve the platform</p>
+        </header>
+<form action="" id="survey-form"></form>
+
+        <!-- text section name-->
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text"
+            name="firstname" id="firstname"
+            class="formControl"  
+            placeholder="Enter Your First Name"
+            required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+            name="lastname" id="lastname"
+            class="formControl"
+            placeholder="Enter Your Last Name">
+        </div>
+       <!-- end of text section name -->
+
+       
+
+       <!-- type section email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text"
+            name="email" id="email"
+            class="formControl"
+            required>
+        </div>
+        <!-- end of type email section -->
+
+            <div class="checkbox">
+            <label> Remember me</label>
+            <input type="checkbox" name="remember">
+            </div>
+
+
+        <!-- type number -->
+        <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input type="number"
+        name="number" id="number"
+        class="formControl"
+        placeholder="Enter Your Phone Number"
+        required>
+        </div>
+        <!-- end type number -->
+
+        <!-- address -->
+        <div class="form-group">
+        <label for="address">Address<span class="clue">(optional)</span></label>
+        <input type="text"
+        name="address" id="address"
+        class="formControl"
+        placeholder="Enter Your Address"
+        required>
+        </div>
+        <!-- end address -->
+    
+
+            <!-- button gender -->
+         <label for="gender">Gender</label>
+
+         <select name="gender" id="gender">
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+         <option value="other">Other</option>
+         </select>
+        <!-- end of gender dropdown -->
+
+         <br> <br>
+        <!-- star icon -->
+         
+            <label id="heading">Your Experiance</label>
+            <br>
+            <div>    
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        <!-- end of star icon -->
+
+        <p> Overall, how would you rate your experiance with us?</p>
+    <label for="table" id="heading">How satisfied are you with</label>
+    <table id="table">
+        <tr>
+            <th></th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+        <tr>
+            <td>Purchase</td>
+            <td><input type="radio" name="purchase" id="purchase" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="purchase" id="purchase" value="Unsatisfied"></td>
+            <td><input type="radio" name="purchase" id="purchase" value="Neutral"></td>
+            <td><input type="radio" name="purchase" id="purchase" value="Satisfied"></td>
+            <td><input type="radio" name="purchase" id="purchase" value="Very Satisfied"></td>
+        </tr>
+        <tr>
+            <td>Service</td>
+            <td><input type="radio" name="service" id="service" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="service" id="service" value="Unsatisfied"></td>
+            <td><input type="radio" name="service" id="service" value="Neutral"></td>
+            <td><input type="radio" name="service" id="service" value="Satisfied"></td>
+            <td><input type="radio" name="service" id="service" value="Very Satisfied"></td>
+        </tr>
+        <tr>
+            <td>Company Overall</td>
+            <td><input type="radio" name="overall" id="overall" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="overall" id="overall" value="Unsatisfied"></td>
+            <td><input type="radio" name="overall" id="overall" value="Neutral"></td>
+            <td><input type="radio" name="overall" id="overall" value="Satisfied"></td>
+            <td><input type="radio" name="overall" id="overall" value="Very Satisfied"></td>
+        </tr>
+    </table><br><br>
+    <h2>How likely are you to</h2>
+    <table id="table">
+        <tr>
+            <th></th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+        <tr>
+            <td>Buy from us again</td>
+            <td><input type="radio" name="Buy" id="Buy" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="Buy" id="Buy" value="Unsatisfied"></td>
+            <td><input type="radio" name="Buy" id="Buy" value="Neutral"></td>
+            <td><input type="radio" name="Buy" id="Buy" value="Satisfied"></td>
+            <td><input type="radio" name="Buy" id="Buy" value="Very Satisfied"></td>
+        </tr>
+        <tr>
+            <td>Recomend our products to others</td>
+            <td><input type="radio" name="recpro" id="recpro" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="recpro" id="recpro" value="Unsatisfied"></td>
+            <td><input type="radio" name="recpro" id="recpro" value="Neutral"></td>
+            <td><input type="radio" name="recpro" id="recpro" value="Satisfied"></td>
+            <td><input type="radio" name="recpro" id="recpro" value="Very Satisfied"></td>
+        </tr>
+        <tr>
+            <td>Recomend our company to others</td>
+            <td><input type="radio" name="reccomp" id="reccomp" value="Very Unsatisfied"></td>
+            <td><input type="radio" name="reccomp" id="reccomp" value="Unsatisfied"></td>
+            <td><input type="radio" name="reccomp" id="reccomp" value="Neutral"></td>
+            <td><input type="radio" name="reccomp" id="reccomp" value="Satisfied"></td>
+            <td><input type="radio" name="reccomp" id="reccomp" value="Very Satisfied"></td>
+        </tr>
+    </table>
+
+        <!-- radio button section -->
+         <div class="form-group">
+                <p id="quest">How you came to know about the store</p>
+                <label for="">
+                    <input type="radio"name="source" value="freinds" class="inputRadio" checked>Freinds
+                </label>
+                <label for="">
+                    <input type="radio"name="source" value="tv-ads" class="inputRadio" checked>Tv-ads
+                </label>
+                <label for="">
+                    <input type="radio"name="source" value="social media" class="inputRadio" checked>Social Media
+                </label>
+                <label for="">
+                    <input type="radio"name="source" value="newspaper" class="inputRadio" checked>Newspaper
+                </label>
+                <label for="">
+                    <input type="radio"name="source" value="other" class="inputRadio" checked>Other
+                </label>
+         </div>   
+        <!-- end radio button section -->
+
+        <!-- checkbox section -->
+        <div class="form-group">
+            <p id="quest">Would You Like Us To See Improved ?</p>
+            <label for="">
+                <input type="checkbox" name="prefer"  value="website improve" class="checkbox">Website Improve
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer"  value="store improve" class="checkbox">Store Improve
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer"  value="logitsic improve" class="checkbox">Logistic Improve
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer"  value="product quality improve" class="checkbox">Product Quantity Improve
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer"  value="parking lot" class="checkbox">Parking Lot
+            </label>
+        </div>
+        <!-- end of checkbox section -->
+
+        <!-- text area section -->
+        <div class="form-group">
+            <p id="quest"> GIVE US YOUR FEEDBACK</p>
+            <textarea name="feedback" id="feedback" cols="50" rows="7" class="textarea" placeholder="Enter your feedback here......." required></textarea>
+        </div>
+        <!-- end of text area section -->
+
+        <!-- submit -->
+        <div class="form-group">
+            <button type="submit" id="submit" class="btn">THANK</button>    
+        </div>
+        <!-- end submit -->
+        
+</form>
+</div>
+ 
+</body>
+</html>
